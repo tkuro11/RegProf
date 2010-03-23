@@ -1,14 +1,19 @@
-ALL=re2 pcre
+ALL=re2 pcre onig
 CC=$(CXX)
 CXXFLAGS=-O5
 
 RE2LIBS=-lpthread -lre2
 PCRELIBS=-lpcrecpp
+ONIGLIBS=-lonig
 
 all: $(ALL)
 
 re2: re2.o _Prof.o $(RE2LIBS)
 pcre: pcre.o _Prof.o $(PCRELIBS)
+onig: onig.o _Prof.o $(ONIGLIBS)
+boost: boost.o _Prof.o $(BOOSTREGEXLIBS)
+
+
 
 
 clean:
