@@ -1,0 +1,5 @@
+Framework for profiling Regex Engines for backtracking regex patterns.
+
+
+inherit from the _Prof class and call method Prof(), then that subclass will print result in [us].
+
