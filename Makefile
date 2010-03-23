@@ -1,10 +1,11 @@
-ALL=re2 pcre onig
+ALL=re2 pcre onig boost
 CC=$(CXX)
 CXXFLAGS=-O5
 
 RE2LIBS=-lpthread -lre2
 PCRELIBS=-lpcrecpp
 ONIGLIBS=-lonig
+BOOSTREGEXLIBS=-lboost_regex
 
 all: $(ALL)
 
